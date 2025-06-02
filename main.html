@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>波斯打飞机</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="startScreen" class="screen">
+    <h1>波斯打飞机</h1>
+    <div id="coinsDisplay" class="coins">金币: 0</div>
+    <button id="startBtn">开始</button>
+    <button id="shopBtn">商城</button>
+    <button id="settingsBtn">设置</button>
+</div>
+
+<div id="shopScreen" class="screen" style="display: none;">
+    <h1>商城</h1>
+    <p>testing</p>
+    <p>These options are all unavailable for now.</p>
+    <div class="shop-items">
+        <div class="shop-item">
+            <h3>皮肤1</h3>
+            <p>100金币</p>
+            <button>购买</button>
+        </div>
+        <div class="shop-item">
+            <h3>皮肤2</h3>
+            <p>200金币</p>
+            <button>购买</button>
+        </div>
+    </div>
+    <button id="shopBackBtn" class="back-btn">返回</button>
+</div>
+
+<div id="settingsScreen" class="screen" style="display: none;">
+    <h1>设置</h1>
+    <p>testing</p>
+    <p>These options are all unavailable for now.</p>
+    <div class="settings-content">
+        <div class="setting-item">
+            <label>音效音量</label>
+            <input type="range" min="0" max="100" value="100">
+        </div>
+        <div class="setting-item">
+            <label>背景音乐</label>
+            <input type="range" min="0" max="100" value="80">
+        </div>
+        <div class="setting-item">
+            <label>难度</label>
+            <select>
+                <option>简单</option>
+                <option>中等</option>
+                <option>困难</option>
+            </select>
+        </div>
+    </div>
+    <button id="settingsBackBtn" class="back-btn">返回</button>
+</div>
+
+<canvas id="gameCanvas"></canvas>
+<div id="score">分数: 0</div>
+<script src="main.js"></script>
+</body>
+</html>
